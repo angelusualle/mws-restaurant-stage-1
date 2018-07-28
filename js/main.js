@@ -3,6 +3,22 @@ let restaurants,
   cuisines
 var newMap
 var markers = []
+registerServiceWorker();
+
+/**
+ * Do service worker work when page 
+ */
+function registerServiceWorker(){
+  if (!navigator.serviceWorker) return;
+  navigator.serviceWorker.register('/sw.js').then(function(reg) {
+    console.log(reg);
+    console.log(navigator.serviceWorker.controller);
+    if (!navigator.serviceWorker.controller) {
+      return;
+    }
+    
+  }).catch((r) => console.log(r));
+}
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
