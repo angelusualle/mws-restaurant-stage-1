@@ -10,16 +10,13 @@ registerServiceWorker();
  */
 function registerServiceWorker(){
   if (!navigator.serviceWorker) return;
-  navigator.serviceWorker.register('js/sw.js').then(function(reg) {
-    console.log(reg);
-    console.log(navigator.serviceWorker.controller);
+  navigator.serviceWorker.register('sw.js').then(function(reg) {
     if (!navigator.serviceWorker.controller) {
       return;
     }
     
-  }).catch((r) => 
-  
-  console.log(r));
+  }).catch((r) =>
+    console.log(r));
 }
 
 /**

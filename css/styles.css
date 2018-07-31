@@ -26,7 +26,7 @@ a:hover, a:focus {
 	text-decoration: none;
 }
 a img{
-	border: none 0px #fff;
+	border: none 0 #fff;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
@@ -221,7 +221,7 @@ nav h1 a {
 }
 #restaurant-address {
   font-size: 12pt;
-  margin: 10px 0px;
+  margin: 10px 0;
   text-align:center;
 }
 #restaurant-cuisine {
@@ -310,15 +310,17 @@ nav h1 a {
 }
 
 @media screen and (max-width: 981px){
-  .inside #map{
-    height:200px ;
+  .inside #map {
+    height:200px;
   }
-  .inside #map-container{
+  .inside #map-container {
     height:auto;
     width:100%;
     position:static;
   }
-  #restaurant-container, #reviews-container, .inside #footer {
+  #restaurant-container, 
+  #reviews-container, 
+  .inside #footer {
     width:100%;
     text-align:center; 
   }
@@ -326,8 +328,9 @@ nav h1 a {
     position:static;
     
   }
-  #restaurant-container, #reviews-container{
-    padding-left:0px;
+  #restaurant-container, 
+  #reviews-container {
+    padding-left:0;
   }
   #breadcrumb{
     width: 100%;
@@ -336,18 +339,18 @@ nav h1 a {
   #breadcrumb > :first-child {
     padding-left: 10px;
   }
-  #restaurant-cuisine{
+  #restaurant-cuisine {
     padding: 0;
     margin: 0;
     width:100%;
   }
-  #restaurant-hours{
+  #restaurant-hours {
     text-align:left;
   }
   img {
     max-width: 500px;
   }
-  #reviews-container li{
+  #reviews-container li {
     width:80%;
     margin: 10px auto;
   }
